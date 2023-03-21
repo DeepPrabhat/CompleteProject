@@ -1,0 +1,16 @@
+<h1 class="mx-2">STUDENT FORM</h1>
+
+    <form class="mx-2" [formGroup]="userForm" (ngSubmit)="AddStudent()">
+            <label for="name">First Name:</label>
+            <!-- here inside formcontrol the name is the variable delacred in ts -->
+            <!-- it connnects variable name from ts to the input -->
+            <input type="text" [formControlName]="'fname'">
+          <label for="name">Last Name:</label>
+          <!-- here inside formcontrol the name is the variable delacred in ts -->
+          <!-- it connnects variable name from ts to the input -->
+          <input type="text" [formControlName]="'lname'">
+
+      <!-- <p>Value: {{name.value}}</p> -->
+      <button type="submit">Add</button>
+      </form>
+
